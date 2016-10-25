@@ -19,7 +19,6 @@ class CustomeNavViewController: UINavigationController {
         if self.viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
         }
-        
         super.pushViewController(viewController, animated: animated)
     }
 }
