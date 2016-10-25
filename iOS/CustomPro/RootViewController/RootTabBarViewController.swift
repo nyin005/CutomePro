@@ -16,17 +16,17 @@ class RootTabBarViewController: UITabBarController {
     }
 
     func initUI() {
-        let first = FirstViewController()
-        self.addChildVc(childVc: first, title: "first", image: "tabbar_home", selectedImage: "tabbar_home_selected")
+        let first = NewsViewController()
+        self.addChildVc(childVc: first, title: "新闻", image: "tabbar_home", selectedImage: "tabbar_home_selected")
         
-        let second = SecondViewController()
-        self.addChildVc(childVc: second, title: "second", image: "tabbar_message_center", selectedImage: "tabbar_message_center_selected")
+        let second = FoodViewController()
+        self.addChildVc(childVc: second, title: "菜谱", image: "tabbar_message_center", selectedImage: "tabbar_message_center_selected")
         
-        let third = ThirdViewController()
-        self.addChildVc(childVc: third, title: "thired", image: "tabbar_discover", selectedImage: "tabbar_discover_selected")
+        let third = CalendarViewController()
+        self.addChildVc(childVc: third, title: "日历", image: "tabbar_discover", selectedImage: "tabbar_discover_selected")
         
-        let four = FourViewController()
-        self.addChildVc(childVc: four, title: "fourth", image: "tabbar_profile", selectedImage: "tabbar_profile_selected")
+        let four = MineViewController()
+        self.addChildVc(childVc: four, title: "我的", image: "tabbar_profile", selectedImage: "tabbar_profile_selected")
         
         
     }
